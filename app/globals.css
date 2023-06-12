@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  color: var(--color-dark);
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-color-hue: 252;
+  --dark-color-lightness: 17%;
+  --light-color-lightness: 95%;
+  --white-color-lightness: 100%;
+
+  --color-white: hsl(252, 30%, var(--white-color-lightness));
+  --color-light: hsl(252, 30%, var(--light-color-lightness));
+  --color-grey: hsl(252, 15%, 65%);
+  --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
+  --color-secondary: hsl(252, 100%, 90%);
+  --color-success: hsl(120, 95%, 65%);
+  --color-danger: hsl(0, 95%, 65%);
+  --color-dark: hsl(252, 30%, var(--dark-color-lightness));
+  --color-black: hsl(252, 30%, 10%);
+
+  --border-radius: 2rem;
+  --card-border-radius: 1rem;
+  --btn-padding: 0.6rem 2rem;
+  --search-padding: 0.6rem 1rem;
+  --card-padding: 1rem;
+  --form-padding: 2rem;
+
+  --sticky-top-left: 5.4rem;
+  --sticky-top-right: -18rem;
+}
+
+.container {
+  background: var(--color-light) !important;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* ===== Inputs ===== */
+.coolinput {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  position: static;
+}
+
+.coolinput label.text {
+  font-size: 0.75rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  position: relative;
+  top: 0.5rem;
+  margin: 0 0 0 7px;
+  padding: 0 3px;
+  background: #e8e8e8;
+  width: fit-content;
+}
+
+.coolinput input {
+  padding: 11px 10px;
+  font-size: 0.75rem;
+  border: 2px var(--color-primary) solid;
+  border-radius: 5px;
+  background: #e8e8e8;
+}
+
+.coolinput input {
+  outline: none;
+}
+
+/* ===== Buttons ===== */
+.button-name {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px,rgba(45, 35, 66, 0.15) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 35px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 12px;
+ }
+ 
+ .button-name:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+ }
+ 
+ .button-name:hover {
+  box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+ }
+ 
+ .button-name:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+ }
+
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+h1 {
+  text-shadow: 2px 3px 2px var(--color-white);
+  color: var(--color-primary);
+}
+
+img {
+  object-fit: cover;
+}
+
+button {
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.upload {
+  margin-top: 15px;
+}
+
+.text_name {
+  width: 150px;
+}
+
+.text_url {
+  width: 600px;
+}
+
+.order {
+  padding: 5px 10px;
+}
+
+.feature {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.post_list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.post_list a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.post_list img {
+  border-radius: 5%;
+}
+
+.btn_card {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.pagination {
+  display: flex;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(190, 190, 190),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
